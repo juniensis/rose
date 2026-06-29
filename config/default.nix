@@ -1,7 +1,7 @@
 { pkgs, lib, ... }:
 {
   imports = [
-    ./rustaceanvim.nix
+    # ./rustaceanvim.nix
     ./dbee.nix
     ./better-escape.nix
     ./crates.nix
@@ -73,7 +73,7 @@
       fd
       # Formatters
       stylua # Lua formatter
-      nixfmt-rfc-style # Nix formatter
+      nixfmt # Nix formatter
       # Linters
       golangci-lint # Go linter
       shellcheck # Shell script linter

@@ -1,20 +1,6 @@
-# Nixvim template
+# Rose
 
-This template gives you a good starting point for configuring Nixvim standalone.
-See [Standalone Usage] for more detail.
+My personal rose-pine neovim configuration for NixOS.
 
-[Standalone Usage]: https://nix-community.github.io/nixvim/platforms/standalone.html
-
-## Configuring
-
-To start configuring, just add or modify the nix files in `./config`.
-If you add a new configuration file, remember to add it to the
-[`config/default.nix`](./config/default.nix) file
-
-## Testing your new configuration
-
-To test your configuration simply run the following command
-
-```
-nix run .
-```
+Started from XhuyZ's config, for now it's basically a fork, but eventually
+I'll make it truly my own.
