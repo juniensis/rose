@@ -1,5 +1,5 @@
 {
-  description = "A Nixvim configuration";
+  description = "pine needles and rose thorns";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
@@ -20,24 +20,14 @@
         { system, ... }:
         let
           configuration = nixvim.lib.evalNixvim {
-            # Specify the target system.
-            # Alternatively configure `nixpkgs` options in your modules.
             inherit system;
-
-            # Import your Nixvim modules
             modules = [ ./config ];
-
-            # You can use `extraSpecialArgs` to pass additional arguments to your module files
             extraSpecialArgs = {
-              # inherit (inputs) foo;
             };
           };
         in
         {
-          # Run `nix flake check .` to verify that your config is not broken
           checks.default = configuration.config.build.test;
-
-          # Lets you run `nix run .` to start nixvim
           packages.default = configuration.config.build.package;
         };
     };
