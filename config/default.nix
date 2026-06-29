@@ -1,8 +1,9 @@
 { pkgs, lib, ... }:
 {
   imports = [
-    # ./rustaceanvim.nix
+    ./rustaceanvim.nix
     ./dbee.nix
+    ./better-escape.nix
     ./crates.nix
     ./keymaps.nix
     ./treesitter.nix
@@ -66,7 +67,7 @@
     };
     extraPackages = with pkgs; [
       # base
-      nerd-fonts.fantasque-sans-mono  # Font
+      nerd-fonts.fantasque-sans-mono # Font
       fzf
       ripgrep
       fd

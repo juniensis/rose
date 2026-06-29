@@ -1,7 +1,7 @@
 { ... }:
 {
   colorschemes = {
-    solarized-osaka = {
+    rose-pine = {
       enable = true;
     };
   };
