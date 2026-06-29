@@ -7,8 +7,6 @@
   plugins = {
     blink-cmp-dictionary.enable = true;
     blink-cmp-git.enable = true;
-    blink-cmp-spell.enable = false;
-    blink-copilot.enable = false;
     blink-emoji.enable = true;
     blink-ripgrep.enable = true;
     blink-cmp = {
@@ -78,12 +76,9 @@
             "lsp"
             "path"
             "snippets"
-            # Community
-            "copilot"
             "dictionary"
             "emoji"
             "git"
-            "spell"
             "ripgrep"
           ];
           providers = {
@@ -101,12 +96,6 @@
               name = "Emoji";
               module = "blink-emoji";
               score_offset = 1;
-            };
-            copilot = {
-              name = "copilot";
-              module = "blink-copilot";
-              async = true;
-              score_offset = 100;
             };
             lsp.score_offset = 4;
             git = {
