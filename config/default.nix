@@ -6,6 +6,7 @@
     ./better-escape.nix
     ./crates.nix
     ./keymaps.nix
+    ./neotree.nix
     ./treesitter.nix
     ./themes.nix
     ./lazygit.nix
