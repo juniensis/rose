@@ -7,7 +7,6 @@
     ./crates.nix
     ./keymaps.nix
     ./treesitter.nix
-    ./toggleterm.nix
     ./themes.nix
     ./lazygit.nix
     ./bufferline.nix
@@ -18,7 +17,6 @@
     ./yanky.nix
     ./autopairs.nix
     ./blink-cmp.nix
-    ./tmux-navigator.nix
     ./smear-cursor.nix
     ./lsp/conform.nix
     ./lsp/fidget.nix
@@ -31,11 +29,9 @@
     ./noice.nix
     ./neoscroll.nix
     ./zen-mode.nix
-    ./yazi.nix
     ./wtf.nix
     # ./windsurf-vim.nix if you want to use this plugin uncomment it and run nix develop --impure
     ./ts-comments.nix
-    ./timerly.nix
     ./treesj.nix
     ./web-devicons.nix
     ./clipboard.nix
@@ -84,5 +80,10 @@
       delve # Go debugger
       gcc
     ];
+
+    globals = {
+      loaded_netrw = 1;
+      loaded_netrwPlugin = 1;
+    };
   };
 }
