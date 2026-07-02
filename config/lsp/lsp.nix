@@ -1,6 +1,8 @@
 {
   plugins = {
     friendly-snippets.enable = true;
+    trouble.enable = true;
+    markdown-preview.enable = true;
     lsp-lines = {
       enable = true;
     };

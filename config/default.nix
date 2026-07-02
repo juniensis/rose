@@ -9,6 +9,7 @@
     ./colorschemes.nix
     ./keymaps.nix
     ./ui.nix
+    ./mini.nix
     ./treesitter.nix
     ./ts-comments.nix
     ./blink.nix

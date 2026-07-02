@@ -3,6 +3,9 @@
     dial.enable = true;
     dressing.enable = true;
     gitsigns.enable = true;
+    noice.enable = true;
+    which-key = true;
+    nui.enable = true;
     bufferline = {
       enable = true;
       settings = {
