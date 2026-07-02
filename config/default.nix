@@ -1,42 +1,15 @@
 { pkgs, lib, ... }:
 {
   imports = [
-    # ./rustaceanvim.nix
-    ./dbee.nix
-    ./better-escape.nix
-    ./crates.nix
-    ./keymaps.nix
+    ./lsp
     ./neotree.nix
+    ./colorschemes.nix
+    ./keymaps.nix
+    ./ui.nix
     ./treesitter.nix
-    ./themes.nix
-    ./lazygit.nix
-    ./bufferline.nix
-    ./snacks.nix
-    ./gitsigns.nix
-    ./whichkey.nix
-    ./hlchunk.nix
-    ./yanky.nix
-    ./autopairs.nix
-    ./blink-cmp.nix
-    ./smear-cursor.nix
-    ./lsp/conform.nix
-    ./lsp/fidget.nix
-    ./lsp/lsp.nix
-    ./nix-develop.nix
-    ./aerial.nix
-    ./autosave.nix
-    ./notify.nix
-    ./barbecue.nix
-    ./noice.nix
-    ./neoscroll.nix
-    ./zen-mode.nix
-    ./wtf.nix
-    # ./windsurf-vim.nix if you want to use this plugin uncomment it and run nix develop --impure
     ./ts-comments.nix
-    ./treesj.nix
-    ./web-devicons.nix
-    ./clipboard.nix
-    ./opencode.nix
+    ./blink.nix
+    ./rust.nix
   ];
 
   config = {
@@ -46,13 +19,13 @@
 
     opts = {
       number = true;
-      colorcolumn = "80";
+      # colorcolumn = "80";
       relativenumber = true;
       shiftwidth = 2;
       tabstop = 2;
       wrap = false;
-      swapfile = false; # Undotree
-      backup = false; # Undotree
+      swapfile = false;
+      backup = false;
       undofile = true;
       hlsearch = false;
       incsearch = true;
@@ -62,23 +35,14 @@
       updatetime = 50;
       foldlevelstart = 99;
     };
+
     extraPackages = with pkgs; [
-      # base
-      nerd-fonts.fantasque-sans-mono # Font
+      nerd-fonts.fantasque-sans-mono
       fzf
       ripgrep
       fd
-      # Formatters
-      stylua # Lua formatter
-      nixfmt # Nix formatter
-      # Linters
-      golangci-lint # Go linter
-      shellcheck # Shell script linter
-      eslint_d # JavaScript/TypeScript linter
-      # Debuggers
-      netcoredbg # C# debugger
-      asm-lsp # Assembly LSP
-      delve # Go debugger
+      stylua
+      nixfmt
       gcc
     ];
 

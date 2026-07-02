@@ -63,11 +63,9 @@
             "fallback"
           ];
         };
+
         signature = {
           enabled = true;
-          window = {
-            border = "rounded";
-          };
         };
 
         sources = {
@@ -164,7 +162,6 @@
         };
         completion = {
           menu = {
-            border = "rounded";
             draw = {
               gap = 1;
               treesitter = [ "lsp" ];
@@ -186,9 +183,6 @@
           };
           documentation = {
             auto_show = true;
-            window = {
-              border = "rounded";
-            };
           };
           accept = {
             auto_brackets = {
