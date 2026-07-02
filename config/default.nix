@@ -15,6 +15,7 @@
     ./ts-comments.nix
     ./blink.nix
     ./rust.nix
+    ./clipboard.nix
   ];
 
   config = {

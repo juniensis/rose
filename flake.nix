@@ -1,5 +1,5 @@
 {
-  description = "pine needles and rose thorns";
+  description = "rose petals and pine needles";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";

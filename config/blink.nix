@@ -9,6 +9,7 @@
     blink-cmp-git.enable = true;
     blink-emoji.enable = true;
     blink-ripgrep.enable = true;
+    blink-compat.enable = true;
     blink-cmp = {
       enable = true;
       setupLspCapabilities = true;
@@ -78,8 +79,13 @@
             "emoji"
             "git"
             "ripgrep"
+            "crates"
           ];
           providers = {
+            crates = {
+              name = "crates";
+              module = "blink.compat.source";
+            };
             ripgrep = {
               name = "Ripgrep";
               module = "blink-ripgrep";
