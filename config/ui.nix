@@ -4,7 +4,7 @@
     dressing.enable = true;
     gitsigns.enable = true;
     noice.enable = true;
-    which-key = true;
+    which-key.enable = true;
     nui.enable = true;
     bufferline = {
       enable = true;

@@ -4,6 +4,7 @@
     ./lsp/clangd.nix
     ./lsp/conform.nix
     ./lsp/lsp.nix
+    ./web-devicons.nix
     ./snacks.nix
     ./neotree.nix
     ./colorschemes.nix
