@@ -1,3 +1,3 @@
 {
-  plugins.clangd_extensions.enable = true;
+  plugins.clangd-extensions.enable = true;
 }

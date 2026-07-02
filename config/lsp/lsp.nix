@@ -1,5 +1,6 @@
 {
   plugins = {
+    friendly-snippets.enable = true;
     lsp-lines = {
       enable = true;
     };

@@ -1,6 +1,6 @@
 {
-  colorschemes = {
-    rose-pine = {
+  plugins = {
+    flash = {
       enable = true;
     };
   };

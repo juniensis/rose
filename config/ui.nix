@@ -2,6 +2,7 @@
   plugins = {
     dial.enable = true;
     dressing.enable = true;
+    gitsigns.enable = true;
     bufferline = {
       enable = true;
       settings = {

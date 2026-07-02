@@ -1,7 +1,10 @@
 { pkgs, lib, ... }:
 {
   imports = [
-    ./lsp
+    ./lsp/clangd.nix
+    ./lsp/conform.nix
+    ./lsp/lsp.nix
+    ./snacks.nix
     ./neotree.nix
     ./colorschemes.nix
     ./keymaps.nix
